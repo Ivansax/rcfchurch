@@ -1,0 +1,21 @@
+{
+  "name": "Rehoboth Christian Fellowship Masindi",
+  "short_name": "RCF Masindi",
+  "description": "Discover, Develop and Deploy for God's Glory",
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#4b0082",
+  "theme_color": "#4b0082",
+  "icons": [
+    {
+      "src": "rcf log.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "rcf log.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
