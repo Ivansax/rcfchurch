@@ -13,7 +13,10 @@ if ($res) {
 // Fallbacks
 $phone_1 = $settings['phone_1'] ?? '0778608642';
 $phone_2 = $settings['phone_2'] ?? '0779543104';
+$church_email = $settings['church_email'] ?? 'evkrak@gmail.com';
 $yt_url = $settings['youtube_url'] ?? 'https://www.youtube.com/@robertkaahwaministries1991';
+$fb_url = $settings['facebook_url'] ?? 'https://www.facebook.com/RCFCHURCHMASINDI';
+$wa_url = $settings['whatsapp_url'] ?? 'https://chat.whatsapp.com/FFYNIgIrgbbBNK4PUhB90D';
 $mtn_code = $settings['mtn_merchant'] ?? '801726';
 $absa_acc = $settings['absa_acc'] ?? '0393240545';
 $midweek = $settings['midweek_service'] ?? 'Friday: 6:00 PM - 9:00 PM';
@@ -304,12 +307,13 @@ $about_core_values = explode(',', $settings['about_core_values'] ?? 'Christ-Cent
             <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 30px;">Whether you have a prayer request or just want to learn more about our church, we'd love to hear from you.</p>
             <div style="margin-bottom: 30px;">
               <p style="font-size: 1.1rem; margin-bottom: 10px;"><i class="fas fa-phone" style="color: #40E0D0; width: 25px;"></i> <?php echo $phone_1; ?> / <?php echo $phone_2; ?></p>
+              <p style="font-size: 1.1rem; margin-bottom: 10px;"><i class="fas fa-envelope" style="color: #40E0D0; width: 25px;"></i> <?php echo $church_email; ?></p>
               <p style="font-size: 1.1rem; margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color: #40E0D0; width: 25px;"></i> Masindi Kijungu Plot 8 Kirya Road</p>
             </div>
             <div class="social-links" style="display: flex; gap: 20px;">
               <a href="<?php echo $yt_url; ?>" target="_blank" style="color: white; font-size: 2rem;"><i class="fab fa-youtube"></i></a>
-              <a href="#" style="color: white; font-size: 2rem;"><i class="fab fa-facebook"></i></a>
-              <a href="#" style="color: white; font-size: 2rem;"><i class="fab fa-whatsapp"></i></a>
+              <a href="<?php echo $fb_url; ?>" target="_blank" style="color: white; font-size: 2rem;"><i class="fab fa-facebook"></i></a>
+              <a href="<?php echo $wa_url; ?>" target="_blank" style="color: white; font-size: 2rem;"><i class="fab fa-whatsapp"></i></a>
             </div>
           </div>
           <form action="CONTACT.php" method="POST" class="reveal card" style="background: white; padding: 40px; border-radius: 25px; border-top: 8px solid #4b0082; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">

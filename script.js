@@ -94,8 +94,13 @@ if ('serviceWorker' in navigator) {
 const contactForm = document.querySelector("form");
 if (contactForm) {
   contactForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("This is a preview. The form requires a PHP server to send messages.");
+    const email = contactForm.querySelector('input[name="email"]').value;
+    if (!email.includes("@")) {
+      e.preventDefault();
+      alert("Please enter a valid email address.");
+      return;
+    }
+    // Allow the form to submit to the PHP server
   });
 }
 
